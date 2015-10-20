@@ -2,6 +2,8 @@ FROM alpine:3.2
 
 MAINTAINER Jimmi Dyson <jimmidyson@gmail.com>
 
+ENTRYPOINT ["fluentd"]
+
 RUN apk add --update ca-certificates ruby-dev build-base && \
     wget https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/8/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-2.21-r2.apk && \
     wget https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/8/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-bin-2.21-r2.apk && \
