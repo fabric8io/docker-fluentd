@@ -9,6 +9,6 @@ RUN yum install -y gcc ruby-devel make gcc && \
 
 RUN echo 'gem: --no-document' >> /etc/gemrc
 
-ENV FLUENTD_VERSION 0.12.16
+ENV FLUENTD_VERSION 0.12.17
 
 RUN gem update --system && gem install json_pure && gem install fluentd -v ${FLUENTD_VERSION}
