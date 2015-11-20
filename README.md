@@ -1,5 +1,5 @@
 # Docker Fluentd
 
-This is a minimal [Fluentd](http://www.fluentd.org/) Docker image.
+This is a [Fluentd](http://www.fluentd.org/) Docker image.
 
-## Current release: Fluentd 0.12.17 & Ruby 2.0.0
+## Current release: Fluentd 0.14.0.pre.1 & Ruby 2.2.2
