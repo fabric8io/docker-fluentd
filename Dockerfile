@@ -10,7 +10,7 @@ RUN yum update -y && \
     yum clean all
 
 ENV LD_LIBRARY_PATH /opt/rh/rh-ruby23/root/usr/lib64
-ENV FLUENTD_VERSION 0.14.1
+ENV FLUENTD_VERSION 0.14.6
 RUN scl enable rh-ruby23 'gem update --system --no-document' && \
     scl enable rh-ruby23 'gem install --no-document json_pure jemalloc' && \
     scl enable rh-ruby23 "gem install --no-document fluentd -v ${FLUENTD_VERSION}" && \
